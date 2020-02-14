@@ -61,8 +61,6 @@ a {
   text-decoration: none;
 }
 
-
-
 #login-bar {
   display: none;
 }
@@ -88,8 +86,6 @@ a {
 }
 
 button {
-  display: flex;
-  align-items: center;
   color: white;
   background: #0077c5;
   border-radius: 4px;
@@ -98,6 +94,7 @@ button {
   font-size: 13.5px;
   padding: 0 20px;
   margin-left: 10px;
+  text-transform: capitalize;
 }
 button img {
   height: 1em;
@@ -135,4 +132,110 @@ header img {
 #product-bar img {
   height: 23px;
   width: 23px;
+}
+
+form {
+  margin: auto;
+  width: 380px;
+  background: #fff;
+  border: 1px solid #c7c7c7;
+  border-bottom: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+form h2 {
+  color: #4c4c4c;
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 24px;
+  text-align: center;
+}
+
+form h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  padding-top: 20px;
+  text-align: center;
+}
+
+form h3 a {
+  display: block;
+}
+
+fieldset > * {
+  display: block;
+}
+
+label {
+  padding-bottom: 6px;
+  /* this would be space for the error messages that i'm not implementing */
+  margin-top: 30px;
+}
+
+input[type="email"], input[type="tel"], input[type="password"] {
+  width: 100%;
+  height: 34px;
+  line-height: 1.3em;
+  border: 1px solid #c1c5c8;
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
+  border: 1px solid rgba(82,168,236,0.8);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
+}
+
+#phone-warning {
+  padding: 5px 0;
+  font-size: 10px;
+  color: #444;
+}
+
+form button {
+  margin: 30px 0;
+  width: 100%;
+  height: 44px;
+}
+
+#terms {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #757575;
+}
+
+#google-terms {
+  margin: auto;
+  width: 380px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #c7c7c7;
+  border-top: none;
+  font-size: 10px;
+  color: #8d9096;
+  text-align: center;
+}
+
+footer {
+  font-size: 12px;
+  color: #505050;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  margin-right: 10px;
 }
